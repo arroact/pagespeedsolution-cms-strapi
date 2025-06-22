@@ -12,10 +12,22 @@ export interface SharedFaqItem extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedTestimonialItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_testimonial_items';
+  info: {
+    displayName: 'TestimonialItem';
+    icon: 'discuss';
+  };
+  attributes: {
+    Testimonialwords: Schema.Attribute.Text;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.faq-item': SharedFaqItem;
+      'shared.testimonial-item': SharedTestimonialItem;
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "optimization_processes",
+  "info": {
+    "singularName": "optimization-process",
+    "pluralName": "optimization-processes",
+    "displayName": "Optimization Process"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "SubDescription": {
+      "type": "text"
+    },
+    "ProcessImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
