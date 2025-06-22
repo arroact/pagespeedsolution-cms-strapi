@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_faq_items",
+  "info": {
+    "displayName": "faq-item",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "FAQTitle": {
+      "type": "string"
+    },
+    "FAQAnswer": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
