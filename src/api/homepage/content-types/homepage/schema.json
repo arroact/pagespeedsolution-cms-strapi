@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroBanner": {
+      "type": "component",
+      "component": "home-page.hero-banner",
+      "repeatable": false
+    },
+    "AboutUs": {
+      "type": "component",
+      "component": "home-page.about-us",
+      "repeatable": false
+    },
+    "OurServices": {
+      "type": "component",
+      "component": "home-page.service-listing",
+      "repeatable": false
+    },
+    "ServiceBannerItem": {
+      "type": "component",
+      "component": "home-page.service-banner-item",
+      "repeatable": false
+    },
+    "result_screenshot": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::result-screenshot.result-screenshot"
+    },
+    "BenefitsListing": {
+      "type": "component",
+      "component": "common.benefits-poins",
+      "repeatable": false
+    },
+    "client_project_business_count": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client-project-business-count.client-project-business-count"
+    },
+    "OptimizationProcess": {
+      "type": "component",
+      "component": "home-page.optimization-process",
+      "repeatable": false
+    },
+    "testimonial": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::testimonial.testimonial"
+    },
+    "Faqs": {
+      "type": "component",
+      "component": "common.faq",
+      "repeatable": false
+    },
+    "BlogList": {
+      "type": "component",
+      "component": "common.blog-listing",
+      "repeatable": false
+    },
+    "FooterForm": {
+      "type": "component",
+      "component": "shared.footer-form",
+      "repeatable": false
+    }
+  }
+}

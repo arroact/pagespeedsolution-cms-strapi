@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_home_service_listings",
+  "info": {
+    "displayName": "HomeServiceListing"
+  },
+  "options": {},
+  "attributes": {
+    "ServiceLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Content": {
+      "type": "text"
+    },
+    "ServiceLink": {
+      "type": "component",
+      "component": "shared.link-button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

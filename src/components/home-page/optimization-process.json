@@ -1,18 +1,12 @@
 {
-  "kind": "collectionType",
-  "collectionName": "optimization_processes",
+  "collectionName": "components_home_page_optimization_processes",
   "info": {
-    "singularName": "optimization-process",
-    "pluralName": "optimization-processes",
     "displayName": "Optimization Process"
   },
-  "options": {
-    "draftAndPublish": true
-  },
-  "pluginOptions": {},
+  "options": {},
   "attributes": {
     "Title": {
-      "type": "string"
+      "type": "text"
     },
     "SubDescription": {
       "type": "text"
@@ -27,5 +21,6 @@
         "audios"
       ]
     }
-  }
+  },
+  "config": {}
 }

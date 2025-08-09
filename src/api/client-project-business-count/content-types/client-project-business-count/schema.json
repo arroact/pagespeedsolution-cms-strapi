@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "client_project_business_counts",
+  "info": {
+    "singularName": "client-project-business-count",
+    "pluralName": "client-project-business-counts",
+    "displayName": "Client Project Business Count"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BgImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "NumberTitle": {
+      "type": "component",
+      "component": "shared.number-title",
+      "repeatable": true
+    }
+  }
+}

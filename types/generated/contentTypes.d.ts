@@ -410,40 +410,97 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiFaqFaq extends Struct.CollectionTypeSchema {
-  collectionName: 'faqs';
+export interface ApiClientProjectBusinessCountClientProjectBusinessCount
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'client_project_business_counts';
   info: {
-    displayName: 'FAQ';
-    pluralName: 'faqs';
-    singularName: 'faq';
+    displayName: 'Client Project Business Count';
+    pluralName: 'client-project-business-counts';
+    singularName: 'client-project-business-count';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
+    BgImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    faqitem: Schema.Attribute.Component<'shared.faq-item', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::faq.faq'> &
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::client-project-business-count.client-project-business-count'
+    > &
       Schema.Attribute.Private;
+    NumberTitle: Schema.Attribute.Component<'shared.number-title', true>;
     publishedAt: Schema.Attribute.DateTime;
-    SubDescription: Schema.Attribute.Blocks;
-    Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
   };
 }
 
-export interface ApiOptimizationProcessOptimizationProcess
-  extends Struct.CollectionTypeSchema {
-  collectionName: 'optimization_processes';
+export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
+  collectionName: 'homepages';
   info: {
-    displayName: 'Optimization Process';
-    pluralName: 'optimization-processes';
-    singularName: 'optimization-process';
+    displayName: 'Homepage';
+    pluralName: 'homepages';
+    singularName: 'homepage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    AboutUs: Schema.Attribute.Component<'home-page.about-us', false>;
+    BenefitsListing: Schema.Attribute.Component<'common.benefits-poins', false>;
+    BlogList: Schema.Attribute.Component<'common.blog-listing', false>;
+    client_project_business_count: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::client-project-business-count.client-project-business-count'
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Faqs: Schema.Attribute.Component<'common.faq', false>;
+    FooterForm: Schema.Attribute.Component<'shared.footer-form', false>;
+    HeroBanner: Schema.Attribute.Component<'home-page.hero-banner', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::homepage.homepage'
+    > &
+      Schema.Attribute.Private;
+    OptimizationProcess: Schema.Attribute.Component<
+      'home-page.optimization-process',
+      false
+    >;
+    OurServices: Schema.Attribute.Component<'home-page.service-listing', false>;
+    publishedAt: Schema.Attribute.DateTime;
+    result_screenshot: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::result-screenshot.result-screenshot'
+    >;
+    ServiceBannerItem: Schema.Attribute.Component<
+      'home-page.service-banner-item',
+      false
+    >;
+    testimonial: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::testimonial.testimonial'
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiResultScreenshotResultScreenshot
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'result_screenshots';
+  info: {
+    displayName: 'Result Screenshot';
+    pluralName: 'result-screenshots';
+    singularName: 'result-screenshot';
   };
   options: {
     draftAndPublish: true;
@@ -455,15 +512,16 @@ export interface ApiOptimizationProcessOptimizationProcess
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
-      'api::optimization-process.optimization-process'
+      'api::result-screenshot.result-screenshot'
     > &
       Schema.Attribute.Private;
-    ProcessImage: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
     publishedAt: Schema.Attribute.DateTime;
+    ScreenshotsImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     SubDescription: Schema.Attribute.Text;
-    Title: Schema.Attribute.String;
+    Title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1013,8 +1071,9 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-      'api::faq.faq': ApiFaqFaq;
-      'api::optimization-process.optimization-process': ApiOptimizationProcessOptimizationProcess;
+      'api::client-project-business-count.client-project-business-count': ApiClientProjectBusinessCountClientProjectBusinessCount;
+      'api::homepage.homepage': ApiHomepageHomepage;
+      'api::result-screenshot.result-screenshot': ApiResultScreenshotResultScreenshot;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

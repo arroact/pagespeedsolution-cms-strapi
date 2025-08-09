@@ -1,18 +1,12 @@
 {
-  "kind": "collectionType",
-  "collectionName": "faqs",
+  "collectionName": "components_common_faqs",
   "info": {
-    "singularName": "faq",
-    "pluralName": "faqs",
     "displayName": "FAQ"
   },
-  "options": {
-    "draftAndPublish": true
-  },
-  "pluginOptions": {},
+  "options": {},
   "attributes": {
     "Title": {
-      "type": "string"
+      "type": "text"
     },
     "SubDescription": {
       "type": "blocks"
@@ -22,5 +16,6 @@
       "component": "shared.faq-item",
       "repeatable": true
     }
-  }
+  },
+  "config": {}
 }

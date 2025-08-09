@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_number_titles",
+  "info": {
+    "displayName": "NumberTitle"
+  },
+  "options": {},
+  "attributes": {
+    "Number": {
+      "type": "text"
+    },
+    "Title": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_common_benefits_poins",
+  "info": {
+    "displayName": "benefits Poins"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "SubDescription": {
+      "type": "text"
+    },
+    "BenefitTitleIcon": {
+      "type": "component",
+      "component": "shared.benefit-title-icon",
+      "repeatable": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

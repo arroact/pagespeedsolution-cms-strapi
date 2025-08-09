@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "result_screenshots",
+  "info": {
+    "singularName": "result-screenshot",
+    "pluralName": "result-screenshots",
+    "displayName": "Result Screenshot"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "SubDescription": {
+      "type": "text"
+    },
+    "ScreenshotsImage": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

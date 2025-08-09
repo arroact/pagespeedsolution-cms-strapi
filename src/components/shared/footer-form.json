@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_shared_footer_forms",
+  "info": {
+    "displayName": "Footer Form"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "SubDescription": {
+      "type": "text"
+    },
+    "fullNameLabel": {
+      "type": "text"
+    },
+    "emailLabel": {
+      "type": "text"
+    },
+    "phoneLabel": {
+      "type": "text"
+    },
+    "websiteLabel": {
+      "type": "text"
+    },
+    "servicesLabel": {
+      "type": "text"
+    },
+    "servicesOptions": {
+      "type": "enumeration",
+      "enum": [
+        "WORDPRESS SPEED OPTIMIZATION",
+        "SHOPIFY SPEED OPTIMIZATION",
+        "MAGENTO SPEED OPTIMIZATION",
+        "DRUPAL SPEED OPTIMIZATION",
+        "B2B PARTNERSHIP",
+        "FREE PAGE SPEED ANALYSIS"
+      ]
+    },
+    "additionalInfoLabel": {
+      "type": "text"
+    },
+    "submitButtonLabel": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

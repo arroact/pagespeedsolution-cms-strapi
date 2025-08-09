@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_blog_listings",
+  "info": {
+    "displayName": "Blog Listing"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

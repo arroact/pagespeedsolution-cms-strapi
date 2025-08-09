@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_benefit_title_icons",
+  "info": {
+    "displayName": "Benefit Title Icon"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

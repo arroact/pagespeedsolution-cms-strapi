@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_link_buttons",
+  "info": {
+    "displayName": "LinkButton"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

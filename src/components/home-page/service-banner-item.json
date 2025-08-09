@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_home_page_service_banner_items",
+  "info": {
+    "displayName": "Service Banner Item"
+  },
+  "options": {},
+  "attributes": {
+    "BGImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title": {
+      "type": "blocks"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "ServiceLink": {
+      "type": "component",
+      "component": "shared.link-button",
+      "repeatable": false
+    },
+    "PageSpeedIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}
